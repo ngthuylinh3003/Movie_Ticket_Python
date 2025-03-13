@@ -1,5 +1,3 @@
-# Movie-Ticket_Project_Python
-
 # 🎬 Movie Ticket Booking Analysis
 
 ## 1) Dataset & Outputs
