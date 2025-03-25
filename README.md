@@ -1,28 +1,102 @@
 # 🎬 Movie Ticket Booking Analysis
 
-## 1) Dataset & Outputs
 - **Access the dataset and project files:** [Google Drive](https://drive.google.com/drive/folders/1S6RWq4wGdKQW-XDwSnWStFUlUEk8ta2H?usp=sharing)  
-- **View the code and analysis results:** [Google Colab](https://colab.research.google.com/drive/1H5gk1P-8wfCGGwXF77L5GNXdW7BOCS39?usp=sharing)
-  
- ## 2) About the Original Dataset 
-The dataset consists of transaction records from a movie ticket booking application, spanning from 2019 to 2021. It includes five key files:
-[Database Scheme](https://github.com/ngthuylinh3003/PYTHON-PROJECT-Movie-Ticket/blob/f2562c93350c6d2cd6128d9e701370766e71b685/%5B1%5D%20Database%20Scheme%20.png)
+- **View the full code and outputs:** [Google Colab](https://colab.research.google.com/drive/1H5gk1P-8wfCGGwXF77L5GNXdW7BOCS39?usp=sharing)
+- **View the Insights & Recommendations:** [PDF](https://github.com/ngthuylinh3003/Movie_Ticket_Python/blob/3caa83da0738acd4d44049a0b8d2285d069c6dea/%5B4%5D%20Insights%20%26%20Recommendations.png)
 
-- **`ticket_history.csv`** – Records of ticket purchases made through the application.  
-- **`status_detail.csv`** – Lookup table providing detailed information on transaction statuses.  
-- **`device_detail.csv`** – Information on devices used for ticket purchases.  
-- **`customer.csv`** – Customer details and demographics.  
-- **`campaign.csv`** – Information on promotional campaigns run by the application.
+## 📌 Objective
+This project analyzes **Online Ticket Booking Behavior** over **4 years** (2019–2023). It will identify customer segments and purchasing trends, analyze factors influencing booking decisions and assess customer experience with feedback.
+*The insights will help the companies understand their customers' preferences, optimize marketing efforts, and enhance business strategies*
+#### ❓ *Key Question: What are the key characteristics of customer behavior, and what actions should we take to boost sales and improve product quality?*
 
-📌 *The dataset serves as a valuable resource for understanding user preferences, optimizing marketing efforts, and improving business strategies.* 
+---
 
-## 3) Personal Approach & Tools  
+## 📂 Data
+The dataset contains transaction records from a movie ticket booking application (2019–2021) and consists of five tables [Database Scheme](https://github.com/ngthuylinh3003/Movie_Ticket_Python/blob/b461a3ce5fc705b45e987f3c0965343c48033cb9/%5B1%5D%20Database%20Scheme%20.png)
 
-This analysis was conducted using **Google Colab** with **Python**, primarily utilizing the `pandas` and `matplotlib` libraries for data manipulation and visualization.  
+- `ticket_history.csv` – Movie ticket transactions (customer info, cinema name, movie title, showtime, ticket price, discounts, payment method,etc)
+- `status_detail.csv` – Transaction status details
+- `device_detail.csv` – Device details used for booking
+- `customer.csv` – Customer information and demographics
+- `campaign.csv` – Promotional campaign details
 
-Before diving into the analysis, I created a [logical tree](https://github.com/ngthuylinh3003/PYTHON-PROJECT-Movie-Ticket/blob/f2562c93350c6d2cd6128d9e701370766e71b685/%5B2%5D%20Outline%20of%20Logical%20Tree.png) to gain a comprehensive understanding of the problem. This helped structure the workflow efficiently and identify key areas to explore.  
+---
 
-At the end of the notebook, a [mind map](https://github.com/ngthuylinh3003/PYTHON-PROJECT-Movie-Ticket/blob/f2562c93350c6d2cd6128d9e701370766e71b685/%5B4%5D%20Insights%20%26%20Recommendations.png) summarizes the findings, including key insights, visualized charts, and actionable recommendations.  
+## ⚡ Approach
+Before the analysis processing, I have built [Logical tree](https://github.com/ngthuylinh3003/Movie_Ticket_Python/blob/b461a3ce5fc705b45e987f3c0965343c48033cb9/%5B2%5D%20Outline%20of%20Logical%20Tree.png) to outline key areas of exploration  
+The analysis was conducted in **Google Colab using Python**, utilizing:
+- `pandas` for data processing
+- `matplotlib & seaborn` for visualization
 
-📌 This analysis reflects my personal perspective and approach. **I’d love to hear your feedback and suggestions!** 
+*Data Preparation:* Loading, cleaning, and merging tables.
+
+ *Exploratory Analysis:*
+- Checked dataset structure (`info()`) and unique values
+- Analyzed missing values using **a custom function to calculate the percentage of null values per column**
+
+*Visualizations:* Line charts, Pie charts, Bar charts, 100% stacked area charts (via pivot tables)
+
+*Statistical Insights:* Distribution analysis using histograms to detect outliers and identify trends
+
+*Segmentation:*
+- Created **dimension tables** to segment data by **age group, promotion usage, payment method, model type**, etc
+- Built a **TIME dimension table** to ensure all **YearMonth** values are present for complete time series analysis
+
+*Customer Retention:*
+- Conducted **Cohort Analysis** to track user retention in 2019 & 2022
+- Used **Seaborn heatmaps** to visualize retention trends across different cohorts
+
+Finally, a [mind map](https://github.com/ngthuylinh3003/Movie_Ticket_Python/blob/b461a3ce5fc705b45e987f3c0965343c48033cb9/%5B4%5D%20Insights%20%26%20Recommendations.png) summarizes key insights, findings, and recommendations
+
+---
+
+## 📊 Results
+
+#### **Customer Portraits**
+- **Gen Y/Millennials (29-44 years old)** account for **60%** of customers, followed by **Gen Z (36%)**
+- The distribution of the **55+ age group** is unusual
+- **Gender distribution** is **balanced**, with **11% unidentified** customers
+
+#### **Trends (Peak Seasons):**
+- **Monthly:** Two peak seasons: **May–July (summer) & Oct–Dec (year-end)**
+- **Weekly:** Higher activity on **weekends**
+- **Hourly:** Peak hours are **11 AM–1 PM** and **6 PM–8 PM**
+=> *Marketing focus should align with these timeframes*
+
+#### **Payment Behavior:**
+- **89%** of customers book tickets via the **app (iOS/Android/Others)**
+- **77%** use **in-app payment ('money in app')**
+
+#### **Promotion Usage:**
+- **74%** of customers use the product only **once**, with **89% of first-time users** utilizing promotions
+- The most popular promotion is **‘direct discount’ (87%)**
+
+#### **Retention Rate (2019 vs. 2022):**
+- **Minimal difference** between both years
+- **1-month retention is very low**, averaging **only 3% in 2022**, despite **63% of customers** using promotions
+
+#### **Success Rate:**
+- Overall success rate is good ~ **80-90%**
+- **‘Money in app’ payment method** has the highest success rate (**97%**)
+- **10%** of customers face payment errors, mostly due to **bank-related issues (third-party ‘bank account’ payments)**
+
+---
+
+## 🎯 Personal Recommendations
+
+### **Increase Sales:**
+- **Target the 19-25 age group** for new customers
+- **Leverage peak times/seasons** for marketing efforts
+- **Implement cross-selling strategies** and enhance services to retain customers post-promotion
+
+### **Improve Product:**
+- **Enhance the user interface** for a better booking experience
+- **Encourage in-app payments** to increase transaction success rates
+- **Partner with third-party banks** to minimize transaction errors and payment failures
+
+---
+📌 This analysis reflects my personal perspective and approach. **I’d love to hear your feedback and suggestions!**
+
+
+
 
