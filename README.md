@@ -59,6 +59,9 @@ Finally, a [mind map](https://github.com/ngthuylinh3003/Movie_Ticket_Python/blob
 
 ## 📊 Results
 
+- [View the results with the charts](https://github.com/ngthuylinh3003/Movie_Ticket_Python/blob/2ca66b24a9cf6d2fb62b88f294b063a8042ebf96/%5B3%5D%20Insights%20%26%20Charts.png)
+- [View the insights and personal recommendations](https://github.com/ngthuylinh3003/Movie_Ticket_Python/blob/2ca66b24a9cf6d2fb62b88f294b063a8042ebf96/%5B4%5D%20Insights%20%26%20Recommendations.png)
+
 #### **Customer Portraits**:
 - **Gen Y/Millennials (29-44 years old)** account for **60%** of customers, followed by **Gen Z (36%)**
 - The distribution of the **55+ age group** is unusual
