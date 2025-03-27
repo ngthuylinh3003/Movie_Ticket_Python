@@ -1,20 +1,24 @@
 # 🎬 Movie Ticket Booking Analysis
 
-- **Access the dataset and project files:** [Google Drive](https://drive.google.com/drive/folders/1S6RWq4wGdKQW-XDwSnWStFUlUEk8ta2H?usp=sharing)  
+- **Access the dataset and project files:** [Google Drive](https://drive.google.com/drive/folders/1S6RWq4wGdKQW-XDwSnWStFUlUEk8ta2H?usp=sharing)
+- **View the code:** [Code.ipynb](https://github.com/ngthuylinh3003/Movie_Ticket_Python/blob/b2707172f1e9741f1fd2450fc9ebded8a8de0543/%5BPYTHON%5D_PROJECT_MOVIES_TICKETS_Thuy_Linh_Nguyen%20(2).ipynb) 
 - **View the full code and outputs:** [Google Colab](https://colab.research.google.com/drive/1H5gk1P-8wfCGGwXF77L5GNXdW7BOCS39?usp=sharing)
 - **View the Insights & Recommendations:** [PDF](https://github.com/ngthuylinh3003/Movie_Ticket_Python/blob/3caa83da0738acd4d44049a0b8d2285d069c6dea/%5B4%5D%20Insights%20%26%20Recommendations.png)
 
 ## 📌 Objective
-This project analyzes **Online Ticket Booking Behavior** over **4 years** (2019–2023). It will identify customer segments and purchasing trends, analyze factors influencing booking decisions and assess customer experience with feedback.
-*The insights will help the companies understand their customers' preferences, optimize marketing efforts, and enhance business strategies*
+This project analyzes **Online Ticket Booking Behavior** over **4 years** (2019–2023). It will:
++ Identify customer segments and purchasing trends
++ Analyze factors influencing booking decisions
++ Assess customer experience with feedback
+#### **The insights will help the companies understand their customers' preferences, optimize marketing efforts, and enhance business strategies**
 #### ❓ *Key Question: What are the key characteristics of customer behavior, and what actions should we take to boost sales and improve product quality?*
 
 ---
 
 ## 📂 Data
-The dataset contains transaction records from a movie ticket booking application (2019–2021) and consists of five tables [Database Scheme](https://github.com/ngthuylinh3003/Movie_Ticket_Python/blob/b461a3ce5fc705b45e987f3c0965343c48033cb9/%5B1%5D%20Database%20Scheme%20.png)
+The [Dataset](https://drive.google.com/drive/folders/1S6RWq4wGdKQW-XDwSnWStFUlUEk8ta2H?usp=sharing) contains transaction records from a movie ticket booking application (2019–2021) and consists of five tables [Database Scheme](https://github.com/ngthuylinh3003/Movie_Ticket_Python/blob/b461a3ce5fc705b45e987f3c0965343c48033cb9/%5B1%5D%20Database%20Scheme%20.png)
 
-- `ticket_history.csv` – Movie ticket transactions (customer info, cinema name, movie title, showtime, ticket price, discounts, payment method,etc)
+- `ticket_history.csv` – Movie ticket transactions (customer info, cinema name, movie title, showtime, ticket price, discounts, payment method, etc)
 - `status_detail.csv` – Transaction status details
 - `device_detail.csv` – Device details used for booking
 - `customer.csv` – Customer information and demographics
@@ -28,21 +32,24 @@ The analysis was conducted in **Google Colab using Python**, utilizing:
 - `pandas` for data processing
 - `matplotlib & seaborn` for visualization
 
-*Data Preparation:* Loading, cleaning, and merging tables.
+### **📌 Data Preparation:** 
+- Loading, cleaning, and merging tables
 
- *Exploratory Analysis:*
+ ### **📌Exploratory Analysis:**
 - Checked dataset structure (`info()`) and unique values
 - Analyzed missing values using **a custom function to calculate the percentage of null values per column**
 
-*Visualizations:* Line charts, Pie charts, Bar charts, 100% stacked area charts (via pivot tables)
+### **📌 Visualizations:** 
+- Line charts, Pie charts, Bar charts, 100% stacked area charts (via pivot tables)
 
-*Statistical Insights:* Distribution analysis using histograms to detect outliers and identify trends
+### **📌 Statistical Insights:** 
+- Distribution analysis using histograms to detect outliers and identify trends
 
-*Segmentation:*
+### **📌 Segmentation:**
 - Created **dimension tables** to segment data by **age group, promotion usage, payment method, model type**, etc
 - Built a **TIME dimension table** to ensure all **YearMonth** values are present for complete time series analysis
 
-*Customer Retention:*
+### **📌 Customer Retention:**
 - Conducted **Cohort Analysis** to track user retention in 2019 & 2022
 - Used **Seaborn heatmaps** to visualize retention trends across different cohorts
 
@@ -52,7 +59,7 @@ Finally, a [mind map](https://github.com/ngthuylinh3003/Movie_Ticket_Python/blob
 
 ## 📊 Results
 
-#### **Customer Portraits**
+#### **Customer Portraits**:
 - **Gen Y/Millennials (29-44 years old)** account for **60%** of customers, followed by **Gen Z (36%)**
 - The distribution of the **55+ age group** is unusual
 - **Gender distribution** is **balanced**, with **11% unidentified** customers
