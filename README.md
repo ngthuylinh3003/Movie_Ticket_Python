@@ -77,8 +77,12 @@ Finally, a [mind map](https://github.com/ngthuylinh3003/Movie_Ticket_Python/blob
 - **89%** of customers book tickets via the **app (iOS/Android/Others)**
 - **77%** use **in-app payment ('money in app')**
 
+#### **The no of Tickets:**
+- Most customers buy only a few tickets (73.58% for 1 ticket and 13.4% for 2-3 tickets)
+- But a few top buyers (5 customers) **purchase a lot** (>100 tickets) -> However, their purchases are spread out over time, so there is nothing unusual
+  
 #### **Promotion Usage:**
-- **74%** of customers use the product only **once**, with **89% of first-time users** utilizing promotions
+- **~58%** joined **at least one promotion**; among them, **89%** used a promotion **only once**
 - The most popular promotion is **‘direct discount’ (87%)**
 
 #### **Retention Rate (2019 vs. 2022):**
