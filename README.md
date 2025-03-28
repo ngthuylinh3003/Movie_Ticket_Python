@@ -1,7 +1,7 @@
 # 🎬 Movie Ticket Booking Analysis
 
 - **Access the dataset and project files:** [Google Drive](https://drive.google.com/drive/folders/1S6RWq4wGdKQW-XDwSnWStFUlUEk8ta2H?usp=sharing)
-- **View the code:** [Code.ipynb](https://github.com/ngthuylinh3003/Movie_Ticket_Python/blob/b2707172f1e9741f1fd2450fc9ebded8a8de0543/%5BPYTHON%5D_PROJECT_MOVIES_TICKETS_Thuy_Linh_Nguyen%20(2).ipynb) 
+- **View the code:** [Code.ipynb](https://github.com/ngthuylinh3003/Movie_Ticket_Python/blob/dd0056188de3db2fa9cd97d4147a73eba60514eb/%5BPYTHON%5D_PROJECT_MOVIES_TICKETS_final.ipynb)
 - **View the full code and outputs:** [Google Colab](https://colab.research.google.com/drive/1H5gk1P-8wfCGGwXF77L5GNXdW7BOCS39?usp=sharing)
 - **View the Insights & Recommendations:** [PDF](https://github.com/ngthuylinh3003/Movie_Ticket_Python/blob/3caa83da0738acd4d44049a0b8d2285d069c6dea/%5B4%5D%20Insights%20%26%20Recommendations.png)
 
